@@ -10,8 +10,11 @@ git clone https://github.com/jeremyabraham7/claude-setup.git && cd claude-setup 
 
 Use `./install.sh --symlink` to link instead of copy, so `git pull` updates the skill. Re-running is safe.
 
-Or fetch just the script (it needs the repo files next to it, so clone is preferred):
-`curl -fsSL https://raw.githubusercontent.com/jeremyabraham7/claude-setup/main/install.sh -o install.sh`
+Or install without cloning (it fetches the repo itself; `--symlink` is not available this way):
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/jeremyabraham7/claude-setup/main/install.sh | bash
+```
 
 ## Usage
 
